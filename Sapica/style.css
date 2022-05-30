@@ -1,0 +1,1114 @@
+*{
+    padding: 0;
+    margin: 0;
+    border-image: none;
+}
+html, body, .row{
+    height: 100%;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+.clear{
+    clear: both;
+}
+.row{
+    /* background-color: blueviolet; */
+    position: relative;
+}
+header{
+    height: 80px;
+    /* background-color: lightgreen; */
+    position: relative;
+    z-index: 1;
+}
+.logo{
+    width: 360px;
+    height: 100%;
+    background-color: #ecb623;
+    float: left;
+}
+.logo img{
+    float: right;
+    margin: 15px 10px 0 0;
+    transition: all .5s ease;
+}
+.logo img:last-of-type{
+    display: none;
+}
+.logo:hover img{
+    margin-right: 90px;
+}
+header nav{
+    float: left;
+    margin-left: 126px;
+}
+header nav ul{
+    display: table;
+    list-style-type: none;
+    padding-top: 30px;
+}
+header nav ul li{
+    float: left;
+    margin-right: 40px;
+}
+header nav ul li:last-of-type{
+    margin-right: 0;
+}
+header nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #858b8e;
+    font-size: 16px;
+}
+header nav ul li a:hover{
+    color: #63c6ae;
+}
+.bgr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: url("images/retriver.jpg") no-repeat;
+    background-size: cover;
+    background-position: center 80px;
+    overflow: hidden;
+}
+.sveza{
+    background-color: #ecb623;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px 100px;
+    transform: translate(-50%, -50%);
+}
+.sveza h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+}
+.sveza2{
+    width: 420px;
+    background-color: #24292b78;
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 210px);
+    padding: 25px 0;
+}
+.sveza2 p{
+    color: white;
+    text-align: center;
+}
+#speedlink{
+    padding: 40px 0;
+    /* background-color: aquamarine; */
+}
+.container{
+    width: 1200px;
+    /* background-color: green; */
+    margin: 0 auto;
+}
+article{
+    width: 280px;
+    height: 430px;
+    /* background-color: yellow; */
+    float: left;
+    margin-left: 26px;
+    position: relative;
+}
+article:first-child{
+    margin-left: 0;
+}
+article img:first-of-type{
+    position: absolute;
+}
+article img:last-of-type{
+    position: absolute;
+    top: 137px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid #dfdcd7;
+    border-radius: 50%;
+    box-shadow: 1px 3px 8px black;
+}
+.textbox{
+    width: 85%;
+    margin: 240px auto 0 auto;
+    /* background-color: green; */
+}
+.textbox p{
+    color: #737c85;
+    font-size: 21px;
+    line-height: 27px;
+}
+.textbox2{
+    width: 85%;
+    margin: 240px auto 0 auto;
+    /* background-color: green; */
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.textbox2 p{
+    color: #737c85;
+    font-size: 13px;
+    line-height: 22px;
+}
+article a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+article:hover a{
+    border: 10px solid #ecb623;
+}
+article:hover img:last-of-type{
+    border: 3px solid #ecb623;
+}
+article:hover p{
+    color: #ecb623;
+}
+aside{
+    margin-top: 50px;
+    width: 49%;
+    color: #737c85;
+    float: left;
+}
+aside:nth-child(2){
+    float: right;
+}
+aside h2{
+    height: 100px;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+}
+aside p{
+    font-size: 14px;
+    line-height: 28px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.title-gallery{
+    margin-top: 30px;
+    height: 60px;
+    background-color: #ecb623;
+}
+.title-gallery h2{
+    color: white;
+    margin-left: 155px;
+    padding: 14px 0;
+}
+.images{
+    width: 16.665%;
+    line-height: 0;
+    float: left;
+    position: relative; 
+}
+.images img{
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(36, 42, 44, 0.77);
+}
+.images:hover .overlay{
+    background-color: rgba(36, 42, 44, 0);
+}
+.images:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    line-height: 0;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -21px;
+    padding: 10px;
+    transition: 0.6s ease;
+    border-radius: 4px;
+    user-select: none;
+}
+.prev {
+    left: 12%;
+}
+.next {
+    right: 12%;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.banner{
+    width: 568px;
+    background-color: rgba(0, 0, 0, .3);
+    position: absolute;
+}
+.dogs{
+    top: 20%;
+    right: 18%;
+}
+.cats{
+    top: 14%;
+    left: 18%;
+}
+.banner p{
+    display: inline-block;
+    color: #f2f2f2;
+    text-transform: uppercase;
+}
+.banner p:first-child{
+    width: 53%;
+    font-size: 25px;
+    line-height: 40px;
+    padding: 10px 20px;
+}
+.banner p:last-child{
+    font-size: 80px;
+    border-left: 2px solid white;
+    padding: 0 20px;
+    margin: 10px 0;
+    line-height: 59px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#videoreel{
+    background-color: white;
+}
+.videomenu{
+    width: 100%;
+    background-image: url(images/bckgrd.png);
+    background-size: 100% 100%;
+    position: relative;
+}
+.videomenu ul{
+    padding: 25px 0 21.5% 0;
+}
+.videomenu ul li a{
+    color: #444e52;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 48px;
+    margin-left: 15%; 
+}
+.videomenu ul li:hover a{
+    color: #63c6ae;
+}
+.videowrap{
+    width: 60%;
+    box-shadow: 8px 8px 13px #454e51;
+    line-height: 0;
+    position: absolute;
+    top: 40px;
+    left: 35%;
+}
+.imagegif{
+    width: 100%; 
+    height: 0;
+    padding-bottom: 55.6%;
+    position: relative;
+}
+.imagegif img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.imagegif h1{
+    position: absolute;
+    top: 15px;
+    left: 33%;
+    color: white;
+    font-size: 44px;
+    line-height: 20px;
+}
+.imagegif p{
+    position: absolute;
+    left: 20%;
+    bottom: 15px;
+    font-size: 24px;
+    line-height: 20px;
+    color: white;
+}
+.video{
+    width: 100%; 
+    height: 0;
+    padding-bottom: 55.6%;
+    position: relative;
+    display: none;
+}
+.video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.videomenu ul li:hover .video{
+    display: block;
+}
+#martin{
+    background-color: #ecb623;
+}
+#martin h1{
+    color: white;
+    font-size: 48px;
+    line-height: 44px;
+    font-weight: 400;
+    text-align: center;
+    font-style: italic; 
+    padding-top: 100px;   
+}
+#martin p{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 44px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+footer{
+    border-top: 12px solid #95ca1e;
+    background-color: #242a2c;
+    padding: 40px 0;
+}
+footer h3{
+    color: #454e51;
+    font-size: 18px;
+    line-height: 24px;
+    text-indent: 14px;
+    padding-bottom: 10px;
+}
+footer .container div{
+    width: 24.5%;
+    border-right: 2px solid #858b8e;
+    float: left;
+    /* background-color: greenyellow; */
+}
+footer .container :nth-child(4){
+    border: none;
+}
+footer .container div:last-of-type{
+    border: none;
+}
+.footlogo{
+    text-align: center;
+    padding-bottom: 26px;
+}
+.footlogo img{
+    width: 50%;
+}
+.aboutus p{
+    color: #454e51;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+}
+.socnett{
+    padding-bottom: 102px;
+}
+.socnett ul{
+    list-style-type: none;
+    text-align: center;
+}
+.socnett ul li{
+    width: 29%;
+    margin: 0 4px;
+    display: inline-block;
+    position: relative;
+    line-height: 0;
+}
+.socnett img{
+    width: 100%;
+}
+.socnett a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(36, 42, 44, 0.77);
+    transition: all .4s;
+}
+.socnett a:hover{
+    background-color: rgba(36, 42, 44, 0);
+}
+.contactfoot ul{
+    list-style-type: none;
+}
+.contactfoot i{
+    color: #999999;
+    float: left;
+    margin: 0 20px;
+    padding: 10px 0;
+}
+.contactfoot p{
+    color: #454e51;
+    font-size: 16px;
+    line-height: 18px;
+    float: left;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+@media all and (max-width: 1199px) and (min-width: 992px){   
+    header{
+        height: 70px;
+    }
+    .logo{
+        width: 315px;
+    }
+    .logo img{
+        height: 47px;
+        margin: 13px 9px 0 0;
+    }
+    .logo:hover img{
+        margin-right: 79px;
+    }
+    header nav{
+        margin-left: 90px;
+    }
+    header nav ul{
+        padding-top: 26px;
+    }
+    header nav ul li{
+        margin-right: 28px;
+    }
+    header nav ul li a{
+        font-size: 15px;
+    }
+    .bgr{
+        background-position: center 70px;
+    }
+    .sveza{
+        padding: 25px 90px;
+    }
+    .sveza h1{
+        font-size: 23px;
+    }
+    .sveza2{
+        width: 400px;
+        background-color: #24292b78;
+        position: absolute;
+        top: 86px;
+        left: calc(50% - 200px);
+        padding: 22px 0;
+    }
+    .sveza2 p{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .container{
+        width: 900px;
+    }
+    article{
+        margin-left: 30px;
+    }
+    article:nth-child(4){
+        margin: 25px 0 0 310px;
+    }
+    .banner{
+        width: 500px;
+    }
+    .banner p:first-child{
+        font-size: 22px;
+        line-height: 35px;
+        padding: 10px 16px;
+    }
+    .banner p:last-child{
+        font-size: 74px;
+        border-left: 2px solid white;
+        padding: 0 16px;
+        line-height: 58px;
+    }
+    .imagegif h1{
+        left: 30%;
+        font-size: 40px;
+    }
+    .imagegif p{
+        left: 17%;
+        font-size: 20px;
+    }
+    .videomenu ul{
+        padding: 25px 0 17% 0;
+    }
+    #martin h1{
+        font-size: 42px;
+        line-height: 38px;
+        padding-top: 80px;   
+    }
+    #martin p{
+        font-size: 26px;
+        line-height: 38px;
+        padding-top: 15px;
+        padding-bottom: 80px;
+    }
+    footer h3{
+        font-size: 16px;
+        text-indent: 10px;
+    }
+    .footlogo{
+        text-align: center;
+        padding-bottom: 83px;
+    }
+    .aboutus p{
+        width: 92%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .socnett{
+        padding-bottom: 132px;
+    }
+    .socnett ul li{
+        width: 29%;
+        margin: 0 2px;
+    }
+    .contactfoot i{
+        margin: 0 10px;
+        padding: 8px 0;
+    }
+    .contactfoot p{
+        font-size: 14px;
+        line-height: 18px;
+        padding: 8px 0;
+    }
+}
+@media all and (max-width: 991px) and (min-width: 768px){
+    header{
+        height: 60px;
+    }
+    .logo{
+        width: 270px;
+    }
+    .logo img{
+        height: 40px;
+        margin: 11px 8px 0 0;
+    }
+    .logo:hover img{
+        margin-right: 68px;
+    }
+    header nav{
+        margin-left: 45px;
+    }
+    header nav ul{
+        padding-top: 20px;
+    }
+    header nav ul li{
+        margin-right: 20px;
+    }
+    header nav ul li a{
+        font-size: 13px;
+    }
+    .bgr{
+        background-position: center 60px;
+    }
+    .sveza{
+        padding: 20px 80px;
+    }
+    .sveza h1{
+        font-size: 17px;
+    }
+    .sveza2{
+        width: 340px;
+        background-color: #24292b78;
+        position: absolute;
+        top: 70px;
+        left: calc(50% - 170px);
+        padding: 20px 0;
+    }
+    .sveza2 p{
+        font-size: 13px;
+        line-height: 17px;
+    }
+    .container{
+        width: 600px;
+    }
+    article{
+        margin-left: 40px;
+    }
+    article:nth-child(3){
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    article:nth-child(4){
+        margin-top: 40px;
+    }
+    aside h2{
+        height: 80px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    aside p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .banner{
+        width: 425px;
+    }
+    .banner p:first-child{
+        font-size: 19px;
+        line-height: 32px;
+        padding: 10px 12px;
+    }
+    .banner p:last-child{
+        font-size: 68px;
+        border-left: 2px solid white;
+        padding: 0 9px;
+        line-height: 52px;
+    }
+    .imagegif h1{
+        top: 10px;
+        left: 27%;
+        font-size: 27px;
+        line-height: 15px;
+    }
+    .imagegif p{
+        left: 12%;
+        bottom: 10px;
+        font-size: 17px;
+        line-height: 18px;
+    }
+    .videomenu ul li a{
+        margin-left: 10%; 
+    }
+    .videomenu ul{
+        padding: 25px 0 14% 0;
+    }
+    #martin h1{
+        font-size: 35px;
+        line-height: 32px;
+        font-weight: 300; 
+        padding-top: 60px;   
+    }
+    #martin p{
+        font-size: 23px;
+        line-height: 32px;
+        padding-top: 15px;
+        padding-bottom: 60px;
+    }
+    footer h3{
+        font-size: 15px;
+        line-height: 20px;
+        text-indent: 6px;
+        padding-bottom: 4px;
+    }
+    .footlogo{
+        text-align: center;
+        padding-bottom: 146px;
+    }
+    .aboutus p{
+        width: 94%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .socnett{
+        padding-bottom: 178px;
+    }
+    .socnett ul li{
+        width: 29%;
+        margin: 0 1px;
+    }
+    .contactfoot i{
+        margin: 0 5px;
+        padding: 5px 0;
+    }
+    .contactfoot p{
+        font-size: 9px;
+        line-height: 17px;
+        padding: 5px 0;
+    }
+}
+@media all and (max-width: 767px) and (min-width: 575px){
+    header{
+        height: 50px;
+    }
+    .logo{
+        width: 225px;
+    }
+    .logo img{
+        height: 35px;
+        margin: 10px 5px 0 0;
+    }
+    .logo:hover img{
+        margin-right: 56px;
+    }
+    header nav{
+        margin-left: 22px;
+    }
+    header nav ul{
+        padding-top: 14px;
+    }
+    header nav ul li{
+        margin-right: 11px;
+    }
+    header nav ul li a{
+        font-size: 10px;
+    }
+    .bgr{
+        background-position: center 50px;
+    }
+    .sveza{
+        padding: 16px 63px;
+    }
+    .sveza h1{
+        font-size: 12px;
+    }
+    .sveza2{
+        width: 250px;
+        background-color: #24292b78;
+        position: absolute;
+        top: 52px;
+        left: calc(50% - 125px);
+        padding: 15px 0;
+    }
+    .sveza2 p{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .container{
+        width: 300px;
+    }
+    article{
+        margin: 25px 0 0 10px;
+    }
+    article:first-child{
+        margin: 0 0 0 10px;
+    }
+    aside{
+        margin-top: 50px;
+        width: 100%;
+        float: left;
+    }
+    aside h2{
+        height: 80px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    aside p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    .banner{
+        width: 330px;
+    }
+    .banner p:first-child{
+        font-size: 14px;
+        line-height: 23px;
+        padding: 9px 10px;
+    }
+    .banner p:last-child{
+        font-size: 52px;
+        border-left: 2px solid white;
+        padding: 0 5px;
+        line-height: 39px;
+    }
+    .imagegif h1{
+        top: 6px;
+        left: 23%;
+        font-size: 26px;
+    }
+    .imagegif p{
+        left: 5%;
+        bottom: 10px;
+        font-size: 15px;
+    }
+    .videomenu ul li a{
+        font-size: 12px;
+        line-height: 40px;
+        margin-left: 8%; 
+    }
+    .videomenu ul{
+        padding: 25px 0 11% 0;
+    }
+    #martin h1{
+        font-size: 25px;
+        line-height: 25px;
+        font-weight: 300; 
+        padding-top: 50px;   
+    }
+    #martin p{
+        font-size: 20px;
+        line-height: 25px;
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+    footer .container{
+        width: 560px;
+    }
+    footer h3{
+        font-size: 14px;
+        line-height: 19px;
+        text-indent: 5px;
+        padding-bottom: 4px;
+    }
+    .footlogo{
+        text-align: center;
+        padding-bottom: 123px;
+    }
+    .aboutus p{
+        width: 94%;
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .socnett{
+        padding-bottom: 132px;
+    }
+    .socnett ul li{
+        width: 29%;
+        margin: 0 1px;
+    }
+    .contactfoot i{
+        margin: 0 5px;
+        padding: 5px 0;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .contactfoot p{
+        font-size: 8px;
+        line-height: 16px;
+        padding: 5px 0;
+    }
+
+}
+@media all and (max-width: 576px){
+    header{
+        height: 40px;
+    }
+    .logo{
+        width: 120px;
+    }
+    .logo img{
+        display: none;
+}
+    .logo img:last-of-type{
+        margin: 7px 5px 0 0;
+        height: 28px;
+        display: block;
+}
+    .logo:hover img{
+        margin-right: 45px;
+    }
+    .line{
+        height: 2px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+    .line:last-of-type{
+        margin-bottom: 0;
+    }
+    header nav{
+        width: 22px;
+        margin: 6px 6px 0 0;
+        float: right;
+        /* border: 1px solid black; */
+        background-color: #ecb623;
+        border-radius: 5px;
+        padding: 5px 3px;
+        position: relative;
+    }
+    header nav ul{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header nav:hover ul{
+        display: block;
+        padding-top: 33px;
+    }
+    header nav ul li{
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        border-left: 2px solid #ecb623;
+        border-right: 2px solid #ecb623;
+        padding: 5px 35px;
+        background-color: #ffffffa6;
+    }
+    header nav ul li:first-of-type{
+        border-top: 2px solid #ecb623;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    header nav ul li:last-of-type{
+        border-bottom: 2px solid #ecb623;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    header nav ul li:hover{
+        background-color: #ecb623c7;
+        outline: 2px solid #ecb623;
+    }
+    header nav ul li:hover a{
+        color: #63c6ae;
+    }
+    .bgr{
+        background-position: center 40px;
+    }
+    .sveza{
+        display: none;
+    }
+    .sveza2 p{
+        display: none;
+    }
+    .container{
+        width: 300px;
+    }
+    article{
+        margin: 25px 0 0 10px;
+    }
+    article:first-child{
+        margin: 0 0 0 10px;
+    }
+    aside{
+        margin-top: 50px;
+        width: 100%;
+        float: left;
+    }
+    aside h2{
+        height: 80px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+    aside p{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+    #galery{
+        display: none;
+    }
+    .banner{
+        width: 230px;
+    }
+    .banner p:first-child{
+        font-size: 10px;
+        line-height: 16px;
+        padding: 5px 5px;
+    }
+    .banner p:last-child{
+        font-size: 35px;
+        border-left: 2px solid white;
+        padding: 0 3px;
+        line-height: 25px;
+    }
+    .imagegif h1{
+        top: 6px;
+        left: 26%;
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .imagegif p{
+        left: 5%;
+        bottom: 10px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .videomenu{
+        background-image: none;
+    }
+    .videomenu ul{
+        padding: 20px 0 50% 0;
+        margin-left: 10%;
+    }
+    .videomenu ul li{
+        float: left;
+        /* display: inline-block; */
+        margin-right: 16px;
+    }
+    .videomenu ul li a{
+        font-size: 9px;
+        line-height: 0;
+        margin-left: 0;
+    }
+    .videowrap{
+        width: 80%;
+        box-shadow: 5px 5px 5px #454e51;
+        top: 50px;
+        left: 10%;
+    }
+    #martin h1{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 300; 
+        padding-top: 40px;   
+    }
+    #martin p{
+        font-size: 17px;
+        line-height: 25px;
+        padding-top: 15px;
+        padding-bottom: 40px;
+    }
+    footer .container{
+        width: 450px;
+    }
+    footer h3{
+        font-size: 12px;
+        line-height: 15px;
+        text-indent: 5px;
+        padding-bottom: 4px;
+        text-align: center;
+    }
+    .footlogo{
+        text-align: center;
+        padding-bottom: 134px;
+    }
+    .aboutus p{
+        width: 96%;
+        font-size: 10px;
+        line-height: 12px;
+        text-align: center;
+    }
+    .socnett{
+        padding-bottom: 15px;
+    }
+    .socnett ul li{
+        width: 50%;
+        margin: 0 4px;
+    }
+    .contactfoot i{
+        /* display: inline-block; */
+        float: none;
+        /* text-align: center; */
+        margin: 15px 45px 0 45px;
+        padding: 5px 0;
+        font-size: 14px;
+        line-height: 8px;
+    }
+    .contactfoot p{
+        /* display: inline-block; */
+        float: none;
+        font-size: 8px;
+        line-height: 8px;
+        text-align: center;
+        padding: 2px 0;
+    }
+}

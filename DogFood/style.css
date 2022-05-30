@@ -1,0 +1,2312 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-image: none;
+    box-sizing: border-box;
+}
+body{
+    background: url(images/icon.jpg);
+    font-family: 'Open Sans', sans-serif;
+}
+html, body, #startscreen{
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+#startscreen{
+    background-color: #c5dbed;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.orangebig{
+    height: 97%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%);
+}
+.dogstart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+.move1{
+    animation: forth_back 4s ease 0.1s infinite normal;
+}
+@keyframes forth_back{
+    0%   {right: 0; bottom: 0;}
+    35%  {right: 10px; bottom: 15px;}
+    100%  {right: 0; bottom: 0;}
+}
+header{
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    margin-left: 5%;
+    padding-top: 2%;
+    float: left;
+}
+.logo img:last-of-type{
+    display: none;
+}
+header nav{
+    z-index: 1;
+}
+header nav ul{
+    list-style-type: none;
+    padding-top: 5%;
+}
+header nav ul li{
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+}
+header nav ul li:first-child{
+    margin-left: 10%;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #0b375c;
+    transition: all .3s;
+}
+header nav ul li a:hover{
+    color: #f9955e;
+}
+.textstart{
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    z-index: 1;
+}
+.textstart h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #0b375c;
+}
+.textstart h3{
+    font-size: 43px;
+    line-height: 43px;
+}
+.textstart h2{
+    font-size: 84px;
+    line-height: 73px;
+}
+.textstart h1{
+    font-size: 102px;
+    line-height: 92px;
+}
+.textstart p{
+    font-weight: bold;
+    color: #0b375c;
+    line-height: 28px;
+}
+.texthigh{
+    font-size: 26px;
+    margin: 20px 0;
+}
+.textdesc{
+    width: 39%;
+    font-size: 22px;
+}
+.textstart a{
+    font-size: 17px;
+    line-height: 80px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #186cb1;
+    padding: 5px 22px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.textstart a:hover{
+    background-color: #f9955e;
+}
+.orange{
+    position: absolute;
+    background-color: #f9955e;
+    border-radius: 50%;
+}
+.circle1{
+    width: 75px;
+    height: 75px;
+    top: 25%;
+    right: 35%;
+    animation: zoominout 8s ease 1s infinite;
+}
+.circle2{
+    width: 35px;
+    height: 35px;
+    right: 40%;
+    animation: fallinout 3s ease 0s infinite;
+}
+.circle3{
+    width: 35px;
+    height: 35px;
+    top: 55%;
+    left: 37%;
+    animation: zoominout 4s infinite;
+}
+.circle4{
+    width: 60px;
+    height: 60px;
+    top: 48%;
+    animation: flyinout 5s infinite;
+}
+@keyframes zoominout{
+    0% {transform: scale(1)}
+    40% {transform: scale(0)}
+    100% {transform: scale(1)}
+}
+@keyframes fallinout{
+    0%{top: -10%}
+    20%{top: 40%}
+    80%{top: 40%}
+    100%{top: 110%;}
+}
+@keyframes flyinout{
+    0%{left: -10%}
+    20%{left: 32%}
+    80%{left: 32%}
+    100%{left: 110%;}
+}
+#withlove{
+    margin: 0 auto;
+    padding: 40px 5%;
+    position: relative;
+}
+.textbox1{
+    font-family: 'Fredoka One', cursive;
+}
+.textbox1 h1{
+    width: 40%;
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #0b375c;
+    float: left;
+}
+.textbox1 h3{
+    width: 45%;
+    font-size: 32px;
+    line-height: 35px;
+    text-transform: uppercase;
+    color: #f9955e;
+    float: right;
+    padding: 3% 9% 0 0;
+}
+.textbox2{
+    width: 50%;
+    padding: 20px 0 0 0;
+    color: #0b375c;
+}
+.textbox2 p:first-of-type{
+    font-size: 30px;
+    line-height: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.textbox2 div{
+    width: 65%;
+    height: 2px;
+    background-color: #f9955e;
+    margin: 15px 0;
+}
+.textbox2 p:last-of-type{
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 400;
+}
+.dotsround{
+    width: 18%;
+    height: 0;
+    padding-top: 18%;
+    position: absolute;
+    right: 13%;
+    bottom: 12%;
+    z-index: 0;
+    animation: goround 12s infinite linear;
+}
+@keyframes goround{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(-359deg)}
+}
+.dotsround div:first-of-type{
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    background-color: #3d9cea;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.dotsround div:last-of-type{
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: #3d9cea;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}#withlove{
+    background-color: #eaf6ff;
+}
+#withlove img{
+    position: absolute;
+    right: 5%;
+    bottom: 15px;
+    height: 70%;
+}
+.slideshow-container {
+    position: relative;
+    margin: auto;
+    line-height: 0;
+    background-color: #3d9cea;
+}
+.mySlides {
+    display: none;
+}
+.textslide1{
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: #0b375c;
+}
+.textslide2{
+    position: absolute;
+    width: 40%;
+    top: 2%;
+    left: 5%;
+    color: #0b375c;
+}
+.textslide3{
+    position: absolute;
+    width: 40%;
+    top: 2%;
+    right: 5%;
+    color: #0b375c;
+}
+.textslide4{
+    position: absolute;
+    width: 35%;
+    bottom: 2%;
+    left: 5%;
+    color: #0b375c;
+}
+.slideback{
+    background-color: #f9945ebe;
+    padding: 10px;
+    border-radius: 20px;
+}
+.slidehigh{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 400;
+}
+.slidepar{
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.seemore{
+    font-size: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #186cb1;
+    padding: 0 15px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.seemore:hover{
+    background-color: #f9955e;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -21px;
+    padding: 16px;
+    color: #0b375c;
+    font-size: 42px;
+    line-height: 41px;
+    transition: 0.6s ease;
+    border-radius: 5px;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 5px;
+}
+.prev:hover, .next:hover {
+    background-color: #f9955e;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+#tips{
+    background-color: #eaf6ff;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+.circle5{
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -65%);
+    z-index: 0;
+}
+.circle5a{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0;
+    animation: sonar 2s linear infinite;
+}
+@keyframes sonar{
+    0%{opacity: 0.2;}
+    100%{opacity: 0; transform: scale(2);}
+}
+.circle6{
+    width: 10%;
+    height: 0;
+    padding-bottom: 10%;
+    top: 40px;
+    right: -5%;
+    /* transform: translateX(40%); */
+    z-index: 0;
+    animation: pulse 3s linear infinite;
+}
+.circle7{
+    width: 5%;
+    height: 0;
+    padding-bottom: 5%;
+    top: 30px;
+    right: 10%;
+    animation: pulse 3s linear infinite;
+}
+@keyframes pulse{
+    0%{transform: scale(1);}
+    30%{transform: scale(0.5);}
+    35%{transform: scale(1);}
+    60%{transform: scale(0.3);}
+    65%{transform: scale(1);}
+    95%{transform: scale(0.7);}
+    100%{transform: scale(1);}
+}
+#tips h3{
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    line-height: 45px;
+    color: #0b375c;
+    text-align: center;
+}
+.container{
+    width: 93%;
+    margin: 0 auto;
+    color: #0b375c;
+    margin-top: 40px;
+}
+.container article{
+    width: 27.33%;
+    float: left;
+    padding: 0 3%;
+    margin: 0 3% 0 3%;
+    position: relative;
+}
+.container article img{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+}
+.container article h5{
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+    transition: all .5s;
+}
+.container article p{
+    height: 200px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+.container article a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all .4s;
+}
+.container article:hover img{
+    animation: goround .7s linear;
+}
+.container article:hover h5{
+    color: #f9955e;
+}
+.container article:hover a{
+    border: 10px solid #f9955e;
+}
+#varieties{
+    padding: 40px 0;
+    background-color: #daf8ff;
+    position: relative;
+}
+#varieties h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 66px;
+    line-height: 70px;
+    color: #3d9cea;
+    margin-left: 5%;
+    width: 60%;
+    padding-bottom: 20px;
+}
+#varieties aside{
+    width: 50%;
+    float: left;
+    margin-left: 5%;
+}
+#varieties aside div img{
+    float: left;
+    padding: 50px 40px 0 0;
+}
+#varieties aside div img:hover{
+    animation: shake .8s linear;
+}
+@keyframes shake{
+    0%{transform:rotate(0deg)}
+    25%{transform:rotate(10deg)}
+    75%{transform:rotate(-10deg)}
+    100%{transform:rotate(0deg)}
+}
+#varieties aside div ul{
+    float: left;
+    list-style-type: none;
+    padding-top: 60px;
+}
+#varieties aside div ul li a{
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #0b375c;
+    text-decoration: none;
+    transition: all .3s;
+}
+#varieties aside div ul li a:hover{
+    color: #f9955e;
+}
+.bluecir{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #3d9cea;
+}
+.bcircle1{
+    width: 6%;
+    height: 0;
+    padding-bottom: 6%;
+    top: 12%;
+    right: 5%;
+    animation: pulse 10s ease infinite;
+}
+.bcircle2{
+    width: 3%;
+    height: 0;
+    padding-bottom: 3%;
+    top: 9%;
+    right: 14%;
+    animation: pulse 10s ease-in-out infinite;
+}
+.bcircle3{
+    width: 38%;
+    height: 0;
+    padding-bottom: 38%;
+    top: 17%;
+    right: 5%;
+    animation: colortrans 10s linear infinite;
+}
+@keyframes colortrans{
+    10%{background-color: #3d9cea;}
+    50%{background-color: #e88b57;}
+    90%{background-color: #3d9cea;}
+}
+.bcircle3 img{
+    width: 100%;
+}
+#varieties p{
+    width: 40%;
+    position: absolute;
+    bottom: 40px;
+    right: 5%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 23px;
+    line-height: 30px;
+    color: #e88b57;
+}
+#offerscr{
+    position: relative;
+    background-color: #c5dbed;
+    padding: 60px 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.textoffer{
+    margin-left: 55%;
+    color: #0b375c;
+    z-index: 2;
+}
+.textoffer h1, h2, h3{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.textoffer h3{
+    font-size: 43px;
+    line-height: 43px;
+}
+.textoffer h2{
+    font-size: 84px;
+    line-height: 73px;
+}
+.textoffer h1{
+    font-size: 102px;
+    line-height: 92px;
+}
+.textoffer p{
+    font-weight: bold;
+    color: #0b375c;
+    line-height: 28px;
+}
+#offerscr .textdesc{
+    width: 80%;
+}
+.textoffer a{
+    font-size: 17px;
+    line-height: 80px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #186cb1;
+    padding: 5px 22px;
+    border-radius: 20px;
+    transition: all .5s;
+}
+.textoffer a:hover{
+    background-color: #f9955e;
+}
+#offerscr img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+}
+.move2{
+    animation: sweat 3s ease infinite;
+}
+@keyframes sweat{
+    0%{bottom: 0; left: 0; z-index: 1;}
+    35%{bottom: -1%; left: 1%; z-index: 1;}
+    75%{bottom: -1%; left: -1%; z-index: 1;}
+    100%{bottom: 0; left: 0; z-index: 1;}
+}
+.orangeoffer{
+    width: 50%;
+    height: 0;
+    padding-top: 50%;
+    position: absolute;
+    top: -8%;
+    left: -10%;
+    animation: goround 12s infinite linear;
+}
+.circle8{
+    width: 80%;
+    height: 0;
+    padding-top: 80%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circle9{
+    width: 3.5%;
+    height: 0;
+    padding-top: 3.5%;
+    border-radius: 50%;
+    position: absolute;
+    right: 18%;
+    top: 14%;
+}
+.circle10{
+    width: 4%;
+    height: 0;
+    padding-top: 4%;
+    border-radius: 50%;
+    position: absolute;
+    right: 16%;
+    bottom: 14%;
+}
+.circle11{
+    width: 8%;
+    height: 0;
+    padding-top: 8%;
+    border-radius: 50%;
+    position: absolute;
+    right: 8%;
+    bottom: 20%;
+}
+.offer{
+    width: 14%;
+    height: 0;
+    padding-top: 14%;
+    border-radius: 50%;
+    background-color: #0c66ae;
+    position: absolute;
+    top: 14%;
+    left: 26%;
+}
+.offer h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 73px;
+    line-height: 33px;
+    font-weight: 400;
+}
+.offer h4{
+    position: absolute;
+    bottom: 14%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+    line-height: 33px;
+    font-weight: 400;
+}
+#arrival{
+    padding: 40px 0 20px 0;
+    background-color: #daf8ff;
+    position: relative;
+}
+#arrival article{
+    transition: all 1s ease-in;
+}
+#arrival h3{
+    font-family: 'Fredoka One', cursive;
+    font-size: 45px;
+    line-height: 45px;
+    color: #3d9cea;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+#arrival article img{
+    width: 90%;
+}
+#arrival article h5{
+    color: #3d9cea;
+}
+#arrival article p{
+    text-align: justify;
+    height: 155px;
+}
+#arrival article div{
+    width: 90%;
+    margin: 10px auto 0 auto;
+    height: 1px;
+    background-color: #0c66ae;
+}
+#arrival article a{
+    position: relative;
+    display: inline-block;
+    margin: 25px 0 20px 25%;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: #186cb1;
+    padding: 5px 22px;
+    border-radius: 20px;
+    transition: all .5s;
+    border: none;
+}
+#arrival article:hover img{
+    animation: none;
+}
+#arrival article:hover h5{
+    color: #f9955e;
+}
+#arrival article:hover{
+    background-color: #c5dbed;
+}
+#arrival article a:hover{
+    background-color: #f9955e;
+}
+#helpyou{
+    background-color: #eaf6ff;
+    margin: 0 auto;
+    padding: 40px 5%;
+    position: relative;
+}
+#helpyou .textbox1{
+    margin-left: 40%;
+}
+#helpyou .textbox1 h1{
+    width: 70%;
+    float: none;
+}
+#helpyou .textbox2{
+    margin-left: 40%;
+    width: 50%;
+    padding: 20px 0 0 0;
+    color: #0b375c;
+}
+#helpyou .textbox2 div{
+    width: 90%;
+}
+#helpyou img{
+    width: 26%;
+    position: absolute;
+    left: 5%;
+    top: 40px;
+}
+.puppytext{
+    width: 30%;
+    position: absolute;
+    left: 5%;
+    bottom: 15%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 23px;
+    color: #3d9cea;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.bcircle4{
+    width: 5%;
+    height: 0;
+    padding-bottom: 5%;
+    top: 7%;
+    right: 7%;
+    animation: pulse 7s ease infinite;
+}
+.bcircle5{
+    width: 3%;
+    height: 0;
+    padding-bottom: 3%;
+    bottom: 5%;
+    left: 7%;
+    animation: pulse 10s ease-in-out infinite;
+}
+.downSlides {
+    display: none;
+}
+.slilogo{
+    width: 12%;
+    position: absolute;
+    top: 12%;
+}
+.comeleft{
+    left: 5%;
+    animation: comelogo 4s ease;
+}
+@keyframes comelogo{
+    0%{left: -5%;}
+    50%{left: 15%;}
+    75%{left: 2%;}
+    100%{left: 5%;}
+}
+.comeright{
+    right: 5%;
+    animation: comelogo1 4s ease;
+}
+@keyframes comelogo1{
+    0%{right: 0%;}
+    35%{right: 12%;}
+    75%{right: 2%;}
+    100%{right: 5%;}
+}
+.downSlides h2{
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    color: #0b375c;
+    left: 5%;
+    top: 60%;
+    width: 55%;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 3px;
+}
+.downSlides h3{
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    color: #0b375c;
+    right: 25%;
+    top: 12%;
+    width: 20%;
+    font-size: 26px;
+    line-height: 35px;
+    text-align: center;
+}
+footer{
+    padding: 40px 0;
+    background-color: #c5dbed;
+}
+.aboutus{
+    margin: 0 2% 0 5%;
+    width: 44%;
+    float: left;
+    font-weight: bold;
+    color: #1f262f;
+}
+.aboutus h3{
+    color: #1f262f;
+    font-size: 25px;
+    line-height: 33px;
+}
+.aboutus p{
+    font-size: 21px;
+    line-height: 29px;
+    text-align: justify;
+    margin: 10px 0 40px 0;
+}
+.aboutus img{
+    width: 18%;
+}
+.aboutthem{
+    margin-right: 5%;
+    width: 40%;
+    float: right;
+    font-weight: bold;
+    color: #1f262f;
+}
+.aboutthem ul{
+    width: 30%;
+    margin: 60px 0 0 10px;
+    float: left;
+    list-style-type: none;
+    border-right: 1px solid #1f262f;
+}
+.aboutthem ul:last-of-type{
+    border: none;
+}
+.aboutthem ul h4{
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 40px;
+}
+.aboutthem ul a{
+    font-size: 16px;
+    line-height: 33px;
+    text-decoration: none;
+    color: #1f262f;
+    transition: all .5s;
+}
+.aboutthem ul a:hover{
+    color: #0c66ae;
+}
+
+
+
+
+@media all and (max-width: 1199px) and (min-width: 992px){
+    .orangebig{
+        height: 87%;
+    }
+    .dogstart{
+        height: 90%;
+    }
+    .logo img{
+        width: 85%;
+    }
+    header nav ul{
+        padding-top: 5%;
+    }
+    header nav ul li{
+        width: 10%;
+        font-size: 19px;
+    }
+    header nav ul li:first-child{
+        margin-left: 8%;
+    }
+    .textstart{
+        top: 17%;
+    }
+    .textstart h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textstart h2{
+        font-size: 79px;
+        line-height: 68px;
+    }
+    .textstart h1{
+        font-size: 95px;
+        line-height: 85px;
+    }
+    .textstart p{
+        line-height: 23px;
+    }
+    .texthigh{
+        font-size: 21px;
+    }
+    .textdesc{
+        width: 40%;
+        font-size: 20px;
+    }
+    .textstart a{
+        font-size: 16px;
+        line-height: 80px;
+        padding: 5px 20px;
+    }
+    .circle1{
+        width: 70px;
+        height: 70px;
+        top: 20%;
+        right: 33%;
+    }
+    .circle2{
+        width: 35px;
+        height: 35px;
+        right: 40%;
+    }
+    .circle3{
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 42%;
+    }
+    .circle4{
+        width: 55px;
+        height: 55px;
+        top: 40%;
+    }
+    @keyframes fallinout{
+        0%{top: -10%}
+        20%{top: 32%}
+        80%{top: 32%}
+        100%{top: 110%;}
+    }
+    @keyframes flyinout{
+        0%{left: -10%}
+        20%{left: 36%}
+        80%{left: 36%}
+        100%{left: 110%;}
+    }
+    .textbox1 h1{
+        width: 35%;
+        font-size: 50px;
+        line-height: 52px;
+    }
+    .textbox1 h3{
+        width: 40%;
+        font-size: 23px;
+        line-height: 30px;
+        padding: 3% 9% 0 0;
+    }
+    .textbox2{
+        padding: 15px 0 0 0;
+    }
+    .textbox2 p:first-of-type{
+        font-size: 28px;
+        line-height: 45px;
+    }
+    .textbox2 div{
+        width: 80%;
+        margin: 15px 0;
+    }
+    .textbox2 p:last-of-type{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .slidehigh{
+        font-size: 65px;
+        line-height: 65px;
+    }
+    .slidepar{
+        font-size: 19px;
+        line-height: 35px;
+    }
+    .seemore{
+        font-size: 18px;
+        line-height: 50px;
+        padding: 0 15px;
+    }
+    .prev, .next {
+        margin-top: -19px;
+        padding: 12px;
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .container{
+        width: 900px;
+    }
+    .container article{
+        width: 282px;
+        padding: 0 1%;
+        margin: 0 3% 0 0;
+    }
+    .container article:last-of-type{
+        margin-right: 0;
+    }
+    .container article img{
+        width: 55%;
+    }
+    .container article h5{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    #varieties h1{
+        font-size: 55px;
+        line-height: 63px;
+        width: 60%;
+    }
+    #varieties aside div img{
+        padding: 40px 30px 0 0;
+    }
+    #varieties aside div ul{
+        padding-top: 61px;
+    }
+    #varieties aside div ul li a{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .bcircle3{
+        width: 44%;
+        padding-bottom: 44%;
+        top: 22%;
+        right: 5%;
+    }
+    #varieties p{
+        width: 40%;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .textoffer{
+        margin-left: 55%;
+    }
+    .textoffer h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textoffer h2{
+        font-size: 79px;
+        line-height: 68px;
+    }
+    .textoffer h1{
+        font-size: 95px;
+        line-height: 85px;
+    }
+    .textoffer p{
+        line-height: 23px;
+    }
+    #offerscr .textdesc{
+        width: 80%;
+    }
+    .textoffer a{
+        font-size: 16px;
+        line-height: 80px;
+        padding: 5px 20px;
+    }
+    #offerscr img{
+        height: 90%;
+    }
+    .orangeoffer{
+        width: 50%;
+        padding-top: 50%;
+        top: -8%;
+        left: -10%;
+    }
+    .offer{
+        width: 14%;
+        padding-top: 14%;
+        top: 10%;
+        left: 27%;
+    }
+    .offer h1{
+        top: 26%;
+        font-size: 59px;
+    }
+    .offer h4{
+        bottom: 11%;
+        font-size: 36px;
+    }
+
+    #helpyou .textbox1 h1{
+        width: 90%;
+    }
+    #helpyou .textbox2{
+        width: 60%;
+    }
+    #helpyou .textbox2 div{
+        width: 90%;
+    }
+    .puppytext{
+        bottom: 25%;
+        font-size: 20px;
+    }
+    .downSlides h2{
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: 3px;
+    }
+    .downSlides h3{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .aboutus p{
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .aboutthem ul h4{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 30px;
+    }
+    .aboutthem ul a{
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 991px) and (min-width: 768px){
+    .orangebig{
+        height: 70%;
+    }
+    .dogstart{
+        height: 70%;
+    }
+    .logo img{
+        width: 75%;
+    }
+    header nav ul{
+        padding-top: 5%;
+    }
+    header nav ul li{
+        width: 9%;
+        font-size: 18px;
+    }
+    header nav ul li:first-child{
+        margin-left: 7%;
+    }
+    .textstart{
+        top: 20%;
+    }
+    .textstart h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textstart h2{
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .textstart h1{
+        font-size: 79px;
+        line-height: 75px;
+    }
+    .textstart p{
+        line-height: 23px;
+    }
+    .texthigh{
+        font-size: 20px;
+    }
+    .textdesc{
+        width: 40%;
+        font-size: 18px;
+    }
+    .textstart a{
+        font-size: 15px;
+        line-height: 70px;
+        padding: 4px 18px;
+    }
+    .circle1{
+        width: 65px;
+        height: 65px;
+        top: 10%;
+        right: 35%;
+    }
+    .circle2{
+        width: 30px;
+        height: 30px;
+        right: 45%;
+    }
+    .circle3{
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 42%;
+    }
+    .circle4{
+        width: 50px;
+        height: 50px;
+        top: 24%;
+    }
+    @keyframes fallinout{
+        0%{top: -10%}
+        20%{top: 20%}
+        80%{top: 20%}
+        100%{top: 110%;}
+    }
+    @keyframes flyinout{
+        0%{left: -10%}
+        20%{left: 30%}
+        80%{left: 30%}
+        100%{left: 110%;}
+    }
+    .textbox1 h1{
+        width: 35%;
+        font-size: 40px;
+        line-height: 42px;
+    }
+    .textbox1 h3{
+        width: 37%;
+        font-size: 22px;
+        line-height: 22px;
+        padding: 3% 5% 0 0;
+    }
+    .textbox2{
+        padding: 15px 0 0 0;
+    }
+    .textbox2 p:first-of-type{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .textbox2 div{
+        width: 90%;
+        margin: 10px 0;
+    }
+    .textbox2 p:last-of-type{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .dotsround{
+        width: 20%;
+        padding-top: 20%;
+        bottom: 20%;
+    }
+    .slidehigh{
+        font-size: 45px;
+        line-height: 45px;
+    }
+    .slidepar{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .seemore{
+        font-size: 14px;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+    .prev, .next {
+        margin-top: -16px;
+        padding: 10px;
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .container{
+        width: 600px;
+        margin-top: 30px;
+    }
+    .container article{
+        width: 290px;
+        padding: 0 3%;
+        margin: 0 3% 10px 0;
+    }
+    .container article:nth-child(2){
+        margin-right: 0;
+    }
+    .container article:last-of-type{
+        margin: 0 26%;
+    }
+    .container article img{
+        width: 55%;
+    }
+    .container article h5{
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .container article p{
+        height: 180px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    #varieties h1{
+        font-size: 52px;
+        line-height: 58px;
+        width: 75%;
+        padding-bottom: 20px;
+    }
+    #varieties aside div img{
+        padding: 30px 20px 0 0;
+        width: 35%;
+    }
+    #varieties aside div ul{
+        padding-top: 45px;
+    }
+    #varieties aside div ul li a{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .bcircle3{
+        width: 42%;
+        padding-bottom: 42%;
+        top: 30%;
+    }
+    #varieties p{
+        width: 41%;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .textoffer{
+        margin-left: 55%;
+    }
+    .textoffer h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textoffer h2{
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .textoffer h1{
+        font-size: 79px;
+        line-height: 75px;
+    }
+    .textoffer p{
+        line-height: 23px;
+    }
+    #offerscr .textdesc{
+        width: 90%;
+    }
+    .textoffer a{
+        font-size: 15px;
+        line-height: 70px;
+        padding: 4px 18px;
+    }
+    #offerscr img{
+        height: 70%;
+    }
+    .orangeoffer{
+        width: 62%;
+        padding-top: 62%;
+        top: -8%;
+        left: -10%;
+    }
+    .offer{
+        width: 18%;
+        padding-top: 18%;
+        top: 10%;
+        left: 31%;
+    }
+    .offer h1{
+        top: 26%;
+        font-size: 57px;
+    }
+    .offer h4{
+        bottom: 11%;
+        font-size: 34px;
+    }
+    #arrival article{
+        margin-top: 30px;
+    }
+    #helpyou .textbox1{
+        margin-left: 40%;
+    }
+    #helpyou .textbox1 h1{
+        width: 93%;
+        font-size: 37px;
+        line-height: 39px;
+    }
+    #helpyou .textbox2{
+        margin-left: 40%;
+        width: 60%;
+    }
+    #helpyou .textbox2 div{
+        width: 90%;
+    }
+    #helpyou .textbox2 p:first-of-type{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    #helpyou .textbox2 p:last-of-type{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .puppytext{
+        bottom: 19%;
+        font-size: 17px;
+    }
+    .bcircle5{
+        bottom: 10%;
+    }
+    .downSlides h2{
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 3px;
+    }
+    .downSlides h3{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .aboutus{
+        margin: 0 5%;
+        width: 90%;
+        float: none;
+    }
+    .aboutus p{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+    .aboutus img{
+        width: 12%;
+        display: block;
+        margin: 0 auto;
+    }
+    .aboutthem{
+        display: block;
+        margin: 0 5%;
+        width: 90%;
+        float: none;
+    }
+    .aboutthem ul{
+        width: 31%;
+        margin-top: 40px;
+        float: left;
+        text-align: center;
+    }
+    .aboutthem ul h4{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+    .aboutthem ul a{
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+@media all and (max-width: 767px) and (min-width: 575px){
+    .orangebig{
+        height: 50%;
+        top: 30%;
+    }
+    .dogstart{
+        height: 55%;
+    }
+    .logo img{
+        width: 65%;
+    }
+    header nav ul{
+        padding-top: 5%;
+    }
+    header nav ul li{
+        width: 12%;
+        font-size: 15px;
+    }
+    header nav ul li:first-child{
+        margin-left: 7%;
+    }
+    .textstart{
+        top: 22%;
+    }
+    .textstart h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textstart h2{
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .textstart h1{
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .textstart p{
+        line-height: 23px;
+    }
+    .texthigh{
+        font-size: 18px;
+    }
+    .textdesc{
+        width: 40%;
+        font-size: 15px;
+    }
+    .textstart a{
+        font-size: 13px;
+        line-height: 50px;
+        padding: 4px 18px;
+    }
+    .circle1{
+        width: 65px;
+        height: 65px;
+        top: 8%;
+        right: 7%;
+    }
+    .circle2{
+        width: 30px;
+        height: 30px;
+        right: 20%;
+    }
+    .circle3{
+        width: 30px;
+        height: 30px;
+        top: 15%;
+        left: 42%;
+    }
+    .circle4{
+        width: 50px;
+        height: 50px;
+        top: 22%;
+    }
+    @keyframes fallinout{
+        0%{top: -10%}
+        20%{top: 30%}
+        80%{top: 30%}
+        100%{top: 110%;}
+    }
+    @keyframes flyinout{
+        0%{left: -10%}
+        20%{left: 33%}
+        80%{left: 33%}
+        100%{left: 110%;}
+    }
+    .textbox1 h1{
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+        line-height: 42px;
+        float: none;
+    }
+    .textbox1 h3{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 25px;
+        text-align: center;
+        line-height: 28px;
+        padding: 3% 0;
+        float: none;
+    }
+    .textbox2{
+        width: 70%;
+    }
+    .textbox2 p:first-of-type{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .textbox2 div{
+        width: 90%;
+        margin: 10px 0;
+    }
+    .textbox2 p:last-of-type{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .dotsround{
+        right: 7%;
+        bottom: 20%;
+    }
+    #withlove img{
+        height: 50%;
+    }
+    .textslide1, .textslide2, .textslide4{
+        left: 8%;
+    }
+    .slidehigh{
+        font-size: 35px;
+        line-height: 35px;
+    }
+    .slidepar{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .seemore{
+        font-size: 12px;
+        line-height: 25px;
+        padding: 0 15px;
+    }
+    .prev, .next {
+        margin-top: -15px;
+        padding: 10px;
+        font-size: 30px;
+        line-height: 26px;
+    }
+    #tips h3{
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .container{
+        width: 300px;
+        margin-top: 30px;
+    }
+    .container article{
+        width: 290px;
+        padding: 0 5%;
+        margin: 0 0 15px 5px;
+    }
+    .container article img{
+        width: 55%;
+    }
+    .container article h5{
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .container article p{
+        height: 180px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    #varieties{
+        padding: 40px 0 230px 0;
+        overflow: hidden;
+    }
+    #varieties h1{
+        font-size: 42px;
+        line-height: 47px;
+        width: 95%;
+        padding-bottom: 10px;
+    }
+    #varieties aside{
+        width: 100%;
+    }
+    #varieties aside div img{
+        padding: 20px 20px 0 0;
+    }
+    #varieties aside div ul{
+        padding-top: 33px;
+    }
+    .bcircle1{
+        width: 10%;
+        padding-bottom: 10%;
+        top: 35%;
+        right: 5%;
+    }
+    .bcircle2{
+        width: 6%;
+        padding-bottom: 6%;
+        top: 28%;
+        right: 20%;
+    }
+    .bcircle3{
+        width: 27%;
+        padding-bottom: 27%;
+        top: auto;
+        bottom: 20px;
+        left: 5%;
+    }
+    #varieties p{
+        width: 50%;
+        bottom: 42px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .textoffer{
+        margin-left: 55%;
+    }
+    .textoffer h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textoffer h2{
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .textoffer h1{
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .textoffer p{
+        line-height: 23px;
+    }
+    #offerscr .textdesc{
+        width: 90%;
+    }
+    .textoffer a{
+        font-size: 15px;
+        line-height: 70px;
+        padding: 4px 18px;
+    }
+    #offerscr img{
+        height: 70%;
+    }
+    .orangeoffer{
+        width: 62%;
+        padding-top: 62%;
+        top: -8%;
+        left: -10%;
+    }
+    .offer{
+        width: 18%;
+        padding-top: 18%;
+        top: 10%;
+        left: 34%;
+    }
+    .offer h1{
+        top: 22%;
+        font-size: 45px;
+    }
+    .offer h4{
+        bottom: 9%;
+        font-size: 30px;
+    }
+    #arrival h3{
+        font-size: 37px;
+        line-height: 40px;
+    }
+    #arrival article{
+        margin-top: 30px;
+    }
+    #arrival article:first-child{
+        margin-top: 0;
+    }
+    #helpyou img{
+        left: 8%;
+        top: 30%;
+        z-index: 0;
+    }
+    #helpyou .textbox1{
+        margin-left: 5%;
+    }
+    #helpyou .textbox2{
+        width: 55%;
+        margin-left: 40%;
+        text-align: justify;
+    }
+    #helpyou .textbox1 h1{
+        width: 93%;
+        font-size: 33px;
+        line-height: 36px;
+    }
+    #helpyou .textbox2{
+        margin-left: 40%;
+        width: 60%;
+    }
+    #helpyou .textbox2 div{
+        width: 90%;
+    }
+    #helpyou .textbox2 p:first-of-type{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #helpyou .textbox2 p:last-of-type{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .puppytext{
+        bottom: 10%;
+        font-size: 14px;
+        color: #f9955e;
+    }
+    .bcircle5{
+        bottom: 2%;
+        left: 50%;
+    }
+    .downSlides h2{
+        width: 60%;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+    .downSlides h3{
+        right: 22%;
+        width: 25%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .aboutus{
+        margin: 0 5%;
+        width: 90%;
+        float: none;
+    }
+    .aboutus h3{
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .aboutus p{
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .aboutus img{
+        width: 12%;
+        display: block;
+        margin: 0 auto;
+    }
+    .aboutthem{
+        display: block;
+        margin: 0 5%;
+        width: 90%;
+        float: none;
+    }
+    .aboutthem ul{
+        width: 31%;
+        margin-top: 20px;
+        float: left;
+        text-align: center;
+    }
+    .aboutthem ul h4{
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+    .aboutthem ul a{
+        font-size: 15px;
+        line-height: 16px;
+    }
+}
+@media all and (max-width: 576px){
+    .orangebig{
+        height: 50%;
+        top: 25%;
+    }
+    .dogstart{
+        height: 70%;
+    }
+    .logo img:first-of-type{
+        display: none;
+    }
+    .logo img:last-of-type{
+        display: block;
+    }
+    .logo img{
+        width: 75%;
+    }
+    .line{
+        height: 2px;
+        background-color: white;
+        margin-bottom: 6px;
+        transition: all .4s;
+    }
+    .line:last-of-type{
+        margin-bottom: 0;
+    }
+    header nav{
+        width: 32px;
+        margin: 11px 10px 0 0;
+        float: right;
+        background-color: #186cb1;
+        border-radius: 5px;
+        padding: 6px 4px;
+        position: relative;
+        transition: all .8s;
+    }
+    header nav:hover{
+        background-color: #f9955e;
+    }
+    header nav:hover .line{
+        background-color: black;
+    }
+    header nav ul{
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    header nav:hover ul{
+        display: block;
+        padding-top: 33px;
+        z-index: 1;
+    }
+    header nav ul li{
+        width: 100%;
+        font-size: 17px;
+        float: none;
+        margin-right: 0;
+        text-align: center;
+        border-left: 2px solid #0b375c;
+        border-right: 2px solid #0b375c;
+        padding: 4px 35px;
+        background-color: #0b385c5b;
+    }
+    header nav ul li:first-of-type{
+        margin-left: 0;
+        border-top: 2px solid #0b375c;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    header nav ul li:last-of-type{
+        border-bottom: 2px solid #0b375c;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    header nav ul li:hover{
+        background-color: #186cb1;
+    }
+    header nav ul li a{
+        color: white;
+    }
+    header nav ul li:hover a{
+        color: #f9955e;
+    }
+    .textstart h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textstart h2{
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .textstart h1{
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .textstart p{
+        line-height: 23px;
+    }
+    .texthigh{
+        font-size: 18px;
+    }
+    .textdesc{
+        display: none;
+    }
+    .textstart{
+        top: 32%;
+    }
+    .textstart a{
+        font-size: 13px;
+        line-height: 50px;
+        padding: 4px 18px;
+    }
+    .circle1{
+        width: 55px;
+        height: 55px;
+        top: 8%;
+        right: 25%;
+    }
+    .circle2{
+        width: 22px;
+        height: 22px;
+        right: 38%;
+    }
+    .circle3{
+        width: 30px;
+        height: 30px;
+        top: 50%;
+        left: 42%;
+    }
+    .circle4{
+        width: 50px;
+        height: 50px;
+        top: 14%;
+    }
+    @keyframes fallinout{
+        0%{top: -10%}
+        20%{top: 25%}
+        80%{top: 25%}
+        100%{top: 110%;}
+    }
+    @keyframes flyinout{
+        0%{left: -10%}
+        20%{left: 20%}
+        80%{left: 20%}
+        100%{left: 110%;}
+    }
+    .textbox1 h1{
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        line-height: 32px;
+        float: none;
+    }
+    .textbox1 h3{
+        width: 85%;
+        margin: 0 auto;
+        font-size: 24px;
+        text-align: center;
+        line-height: 26px;
+        padding: 2% 0;
+        float: none;
+    }
+    .textbox2{
+        width: 100%;
+    }
+    .textbox2 p:first-of-type{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .textbox2 div{
+        margin: 10px 0;
+        height: 1px;
+    }
+    .textbox2 p:last-of-type{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: bold;
+        text-align: justify;
+    }
+    .dotsround{
+        right: 7%;
+        bottom: 20%;
+    }
+    .dotsround div:first-of-type{
+        background-color: #f9945eb2;
+    }
+    .dotsround div:last-of-type{
+        background-color: #3d9cea6c;
+    }
+    #withlove img{
+        height: 55%;
+        z-index: -1;
+    }
+    .textslide1, .textslide2, .textslide4{
+        left: 8%;
+    }
+    .slidehigh{
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .slidepar{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .seemore{
+        font-size: 12px;
+        line-height: 25px;
+        padding: 0 15px;
+    }
+    .prev, .next {
+        margin-top: -12px;
+        padding: 10px;
+        font-size: 25px;
+        line-height: 26px;
+    }
+    #tips h3{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .container{
+        width: 300px;
+        margin-top: 30px;
+    }
+    .container article{
+        width: 290px;
+        padding: 0 5%;
+        margin: 0 0 15px 5px;
+    }
+    .container article img{
+        width: 55%;
+    }
+    .container article h5{
+        font-size: 24px;
+        line-height: 30px;
+        padding-bottom: 20px;
+    }
+    .container article p{
+        height: 180px;
+        font-size: 19px;
+        line-height: 24px;
+    }
+    #varieties{
+        padding: 40px 0 200px 0;
+        overflow: hidden;
+    }
+    #varieties h1{
+        font-size: 35px;
+        line-height: 43px;
+        width: 95%;
+        padding-bottom: 10px;
+    }
+    #varieties aside{
+        width: 100%;
+    }
+    #varieties aside div img{
+        padding: 20px 20px 0 0;
+    }
+    #varieties aside div ul{
+        padding-top: 33px;
+    }
+    .bcircle1{
+        width: 10%;
+        padding-bottom: 10%;
+        top: 35%;
+        right: 5%;
+    }
+    .bcircle2{
+        width: 6%;
+        padding-bottom: 6%;
+        top: 28%;
+        right: 20%;
+    }
+    .bcircle3{
+        width: 30%;
+        padding-bottom: 30%;
+        top: auto;
+        bottom: 20px;
+        left: 5%;
+    }
+    #varieties p{
+        width: 50%;
+        bottom: 36px;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .textoffer{
+        margin-left: 55%;
+    }
+    .textoffer h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
+    .textoffer h2{
+        font-size: 55px;
+        line-height: 50px;
+    }
+    .textoffer h1{
+        font-size: 65px;
+        line-height: 60px;
+    }
+    .textoffer p{
+        line-height: 23px;
+    }
+    #offerscr .textdesc{
+        width: 90%;
+    }
+    .textoffer a{
+        font-size: 15px;
+        line-height: 70px;
+        padding: 4px 18px;
+    }
+    #offerscr img{
+        height: 70%;
+    }
+    .orangeoffer{
+        width: 62%;
+        padding-top: 62%;
+        top: -4%;
+        left: -10%;
+    }
+    .offer{
+        width: 18%;
+        padding-top: 18%;
+        top: 10%;
+        left: 34%;
+    }
+    .offer h1{
+        top: 18%;
+        font-size: 36px;
+    }
+    .offer h4{
+        bottom: 7%;
+        font-size: 26px;
+    }
+    #arrival h3{
+        font-size: 33px;
+        line-height: 38px;
+    }
+    #arrival article{
+        margin-top: 30px;
+    }
+    #arrival article:first-child{
+        margin-top: 0;
+    }
+    #helpyou img{
+        left: 8%;
+        z-index: -1;
+    }
+    #helpyou .textbox1 h1{
+        width: 100%;
+        font-size: 30px;
+        text-align: left;
+        line-height: 32px;
+        float: none;
+    }
+    #helpyou .textbox2{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .puppytext{
+        bottom: auto;
+        top: 40px;
+        font-size: 14px;
+        color: #f9955e;
+    }
+    .downSlides h2{
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0;
+    }
+    .downSlides h3{
+        right: 22%;
+        width: 25%;
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .aboutus{
+        margin: 0 5%;
+        width: 90%;
+        float: none;
+    }
+    .aboutus h3{
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .aboutus p{
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .aboutus img{
+        width: 12%;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+    .aboutthem{
+        display: block;
+        margin: 0 5%;
+        width: 90%;
+        float: none;
+    }
+    .aboutthem ul{
+        width: 45%;
+        margin: 0 auto;
+        padding: 15px 0;
+        float: none;
+        text-align: center;
+        border-right: none;
+        border-bottom: 1px solid #1f262f;
+    }
+    .aboutthem ul h4{
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    .aboutthem ul a{
+        font-size: 16px;
+        line-height: 14px;
+    }
+}
