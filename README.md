@@ -1,6 +1,5 @@
 # Responsive HTML CSS projects
- My projects made for practice. Created using HTML/CSS only
-
+ My projects made for practice. Created using HTML/CSS only.JS part is copied from https://www.w3schools.com/
  Projects:
  1. Sapica web page - based on PSD template
 
